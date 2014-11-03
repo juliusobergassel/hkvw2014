@@ -42,10 +42,12 @@ footer {
 		}
 	}
 	div.footer-pulldown {
-		position: absolute;
-		bottom: 0;
-		width: 360px;
-		margin-bottom: -150px;
+		@media #{$screen-lg} {
+			position: absolute;
+			bottom: 0;
+			width: 360px;
+			margin-bottom: -150px;
+		}
 	}
 }
 
