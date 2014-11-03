@@ -1,0 +1,18 @@
+<f:layout name="default" />
+<f:section name="content">
+<div class="container main">
+	<div class="row">
+		<div class="col-md-12">
+			<f:cObject typoscriptObjectPath="lib.breadcrumb" />
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-8">
+			<f:format.raw>{content}</f:format.raw>
+		</div>
+        <div class="col-md-4 sidebar">
+        	<div id="sidebar-noscroll"><f:format.raw>{content_sidebar}</f:format.raw></div>
+        </div>
+	</div>
+</div>
+</f:section>

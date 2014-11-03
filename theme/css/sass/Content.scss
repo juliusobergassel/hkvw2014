@@ -1,0 +1,50 @@
+// Include libraries
+@import "compass";
+
+// Include modules
+@import "Variables";
+@import "Fonts";
+
+body {
+	@include font;
+	@media #{$screen-sm} {
+		padding-top: 0px !important;
+	}
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	@include font-heading;
+	line-height: 1.1;
+}
+
+h1 {
+	@include font-heading;
+	letter-spacing: -2.5px;
+	margin-top: 0;
+}
+
+a {
+	color: $red;
+	text-decoration: none;
+	@include transition(color, background-color 0.2s);
+
+	&:hover {
+		color: lighten($red,10%);
+		text-decoration: none;
+	}
+	&:visited {
+		color: $red;
+		text-decoration: none;
+	}
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+

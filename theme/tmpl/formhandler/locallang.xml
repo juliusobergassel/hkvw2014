@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<description>Language labels for HKVWContact-Form</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="label_fieldset">HKVWContact-Form</label>
+			<label index="name">Name:</label>
+			<label index="email">E-Mail:</label>
+			<label index="message">Ihre Nachricht:</label>
+			<label index="captcha">Sicherheitsfrage:</label>
+			<label index="submit">Absenden</label>
+			<label index="greetings">Sehr geehrte/r </label>
+			<label index="email_user_subject">Ihre Anfrage an uns</label>
+			<label index="email_user_text">Wir haben Ihre Nachricht von heimatverein-werther.de erhalten und werden diese schnellstmöglich bearbeiten. Vielen Dank für Ihre Geduld.ir haben Ihre Nachricht von heimatverein-werther.de erhalten und werden diese schnellstmöglich bearbeiten. Vielen Dank für Ihre Geduld.</label>
+			<label index="email_user_footer">---------------------------------- Die Nachricht wurde maschinell erstellt. --------------------------------</label>
+
+			<label index="email_admin_subject">Kontaktformular</label>
+			<label index="email_admin_text">Das Kontaktformular HKVWContact wurde ausgefüllt.</label>
+			<label index="email_admin_footer">---------------------------------- Die Nachricht wurde maschinell erstellt. --------------------------------</label>
+
+			<label index="error_name_required">Bitte geben Sie Ihren Namen ein.</label>
+			<label index="error_email_required">Bitte geben Sie eine E-Mail Adresse ein.</label>
+			<label index="error_email_email">Bitte geben Sie eine gültige E-Mail Adresse ein.</label>
+			<label index="error_message_required">Bitte geben Sie Ihre Nachricht ein.</label>
+			<label index="error_mathguard_answer_mathGuard">Bitte geben Sie die Lösung der Rechenaufgabe ein, um sich als Mensch zu identifizieren.</label>
+		</languageKey>
+	</data>
+</T3locallang>

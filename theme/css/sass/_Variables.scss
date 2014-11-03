@@ -1,0 +1,27 @@
+$black: #1C1C1B;
+$white: #ffffff;
+$warning: #ff460d;
+$green: #00a338;
+
+$gray: #222222;
+$grayDark: darken($gray,40%);
+$grayMedium: lighten($gray,40%);
+$grayLight: lighten($gray,80%);
+
+$textOnWhite: $black;
+$textOnGray: #ffffff;
+$textSubtle: #5b5b5b;
+
+$blue: #00b5ff;
+$blueLight: lighten($blue,40%);
+$blueDark: darken($blue,40%);
+
+$red: #E30513;
+$orange: #F9B233;
+
+$primary: $red;
+$secondary: $orange;
+
+// Media queries
+$screen-sm: "only screen and (max-width: 768px)";
+$screen-lg: "only screen and (min-width: 768px)";
