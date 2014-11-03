@@ -1,0 +1,5 @@
+.buildpath
+.project
+.settings
+theme/css/sass/.sass-cache
+theme/css/rte/sass/.sass-cache
