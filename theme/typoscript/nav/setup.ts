@@ -98,7 +98,6 @@ lib.subnav {
     10.wrap = <li class="list-group-item">|</li>
     10.data = leveltitle:1
     10.typolink.parameter.data = leveluid:1
-
     20 = HMENU
     20.wrap = |
     20 {
@@ -107,7 +106,6 @@ lib.subnav {
         1 {
             wrap = |
             expAll = 0
-
             NO = 1
             NO.allWrap >
             NO.wrapItemAndSub = <li class="list-group-item">|</li>
@@ -116,8 +114,6 @@ lib.subnav {
             CUR.wrapItemAndSub = <li class="list-group-item active">|</li>
             ACT = 1
             ACT < .CUR
-
-            # Dropdown menu
             IFSUB = 1
             IFSUB < .NO
             IFSUB.wrapItemAndSub = <li class="list-group-item">|</li>
@@ -132,8 +128,6 @@ lib.subnav {
             ACTIFSUB < .IFSUB
             ACTIFSUB.wrapItemAndSub = <li class="list-group-item active">|</li>
         }
-
-
         2 = TMENU
         2 {
             wrap = <ul class="list-group">|</ul>
@@ -157,30 +151,8 @@ lib.subnav {
             SPC.doNotShowLink = 1
             SPC.allWrap = <li class="divider"></li>
         }
-
         3 > .2
-        # no submenus anymore
         3.IFSUB >
         3.ACTIFSUB >
-    }
-}
-
-lib.metanav = COA
-lib.metanav {
-    20 = HMENU
-    20.special = directory
-    20.special.value = {$plugin.tx_bootstrapcore.website.metaNav.pageId}
-    20.wrap = |
-    20 {
-        entryLevel = 0
-        #excludeUidList = 33
-        1 = TMENU
-        1 {
-            wrap = |
-            expAll = 1
-            NO = 1
-            NO.allWrap >
-            NO.wrapItemAndSub = |&nbsp;-&nbsp; |*| |&nbsp;-&nbsp; |*| |
-        }
     }
 }

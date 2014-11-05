@@ -3,10 +3,9 @@
 
 // Include modules
 @import "../../sass/Variables";
-@import "../../sass/Fonts";
+@import "Fonts";
 
-@import "/fileadmin/bsdist/lib/fontawesome/css/font-awesome.min.css";
-/*! normalize.css v3.0.0 | MIT License | git.io/normalize */
+@import "/fileadmin/hkvw2014/lib/fontawesome/css/font-awesome.min.css";
 html {
   @include font;
   -ms-text-size-adjust: 100%;

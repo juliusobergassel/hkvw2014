@@ -266,43 +266,59 @@ lib {
             select.where = colPos={$plugin.tx_bootstrapcore.website.homepage.teaserColPos}
     }
 	}
-  footerContent = COA
-	footerContent.wrap = <div class="panel"><div class="panel-footer"><div class="container"><div class="row">|</div></div></div></div>
-	footerContent {
-        10 < styles.content.get
-        10 {
-            select.pidInList = {$plugin.tx_bootstrapcore.website.footer.pageId}
-            #slide = -1
-            select.where = colPos={$plugin.tx_bootstrapcore.website.footer.leftColPos}
-            stdWrap.wrap = <div class="col-md-4 col-sm-4">|</div>
-        }
-        20 < .10
-        20.select.where = colPos={$plugin.tx_bootstrapcore.website.footer.centerColPos}
-        20.stdWrap.wrap = <div class="col-md-4 col-sm-4 text-center">|</div>
-        30 < .10
-        30.select.where = colPos={$plugin.tx_bootstrapcore.website.footer.rightColPos}
-        30.stdWrap.wrap = <div class="col-md-4 col-sm-4 text-right"><div class="footer-pulldown">|</div></div>
-	}
-
 	copyright = COA
 	copyright {
-		10 = TEXT
-		10.data = date:U
-		10.strftime = %Y
-		10.wrap =  &copy; Copyright&nbsp;|&nbsp;Heimat- und Kulturverein Werther e.V.
+		10 = COA
+		10 {
+			20.wrap = <div><p>|</p></div>
+			10 = TEXT
+			10.value = &copy;&nbsp;|&nbsp;Heimat-&nbsp;und&nbsp;Kulturverein&nbsp;Werther&nbsp;e.V.&nbsp;2006&nbsp;-&nbsp;
+			20 = TEXT
+			20.data = date:U
+			20.strftime = %Y
+		}
+		10 >
 		20 = HMENU
-		20.wrap = &nbsp; &#124; &nbsp;|
 		20 {
-			entryLevel = 0
-			#excludeUidList = 11
+			wrap = <ol class="breadcrumb">|</ol>
+			special = directory
+      special.value = {$plugin.tx_bootstrapcore.website.metaNav.pageId}
+			includeNotInMenu = true
 			1 = TMENU
 			1 {
 				wrap = |
 				expAll = 1
 				NO = 1
 				NO.allWrap >
-				NO.wrapItemAndSub = | |*| &nbsp;-&nbsp;| |*| &nbsp;-&nbsp;|
+				#NO.wrapItemAndSub = | |*| &nbsp;&#124;&nbsp;| |*| &nbsp;&#124;&nbsp;|
+	      NO.wrapItemAndSub = <li>|</li>
+	      CUR = 1
+	      CUR < .NO
+	      CUR.wrapItemAndSub = <li class="active">|</li>
 			}
 		}
+	}
+	footerContent = COA
+	footerContent.wrap = <div class="panel"><div class="panel-footer"><div class="container"><div class="row">|</div></div></div></div>
+	footerContent {
+        10 < styles.content.get
+        10 {
+            select.pidInList = {$plugin.tx_bootstrapcore.website.footer.pageId}
+            select.where = colPos={$plugin.tx_bootstrapcore.website.footer.leftColPos}
+            stdWrap.wrap = <div class="col-md-4 col-sm-4">|</div>
+        }
+        20 < .10
+        20.select.where = colPos={$plugin.tx_bootstrapcore.website.footer.centerColPos}
+        20.stdWrap.wrap = <div class="col-md-4 col-sm-4 text-center">|</div>
+        30 = COA
+        30.stdWrap.wrap = <div class="col-md-4 col-sm-4 text-right">|</div>
+        30 {
+        		10 < lib.copyright
+        		20 < lib.footerContent.10
+        		20 {
+        				select.where = colPos={$plugin.tx_bootstrapcore.website.footer.rightColPos}
+        				stdWrap.wrap = <div class="footer-pulldown">|</div>
+        		}
+        }
 	}
 }
