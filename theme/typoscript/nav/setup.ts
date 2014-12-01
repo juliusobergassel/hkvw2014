@@ -37,9 +37,7 @@ lib.navbar {
             ACTIFSUB = 1
             ACTIFSUB < .CURIFSUB
         }
-
-
-        2 = TMENU
+				2 = TMENU
         2 {
             wrap = <ul class="dropdown-menu" role="menu">|</ul>
             expAll = 1
@@ -53,7 +51,7 @@ lib.navbar {
             ACT = 1
             ACT < .CUR
 
-            IFUSB < .1.IFSUB
+            IFSUB < .1.IFSUB
             CURIFSUB < .1.CURIFSUB
             ACTIFSUB < .1.ACTIFSUB
 
@@ -62,11 +60,22 @@ lib.navbar {
             SPC.doNotShowLink = 1
             SPC.allWrap = <li class="divider"></li>
         }
-
         3 < .2
-        3.IFSUB >
-        3.CURIFSUB >
-        3.ACTIFSUB >
+        3 {
+        	wrap = <ul class="dropdown-menu sub-menu" role="menu">|</ul>
+        	expAll = 1
+        	NO = 1
+          NO.allWrap >
+          NO.wrapItemAndSub = <li class="sub-third normal">|</li>
+          CUR = 1
+          CUR < .NO
+          CUR.wrapItemAndSub = <li class="sub-third active">|</li>
+          ACT = 1
+          ACT < .CUR
+        	IFSUB >
+        	CURIFSUB >
+        	ACTIFSUB >
+        }
     }
 }
 
