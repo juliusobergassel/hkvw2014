@@ -70,10 +70,15 @@ lib.navbar {
 		        	NO = 1
 		          NO.allWrap >
 		          NO.wrapItemAndSub = <li class="sub-deep normal">|</li>
+		          CUR = 1
+		          CUR < .NO
 		          CUR.wrapItemAndSub = <li class="sub-deep active">|</li>
+		          ACT = 1
+		          ACT < .CUR
 		        }
 		        4 < .3
-		        4 {
+		        5 < .3
+		        5 {
 		        	IFSUB >
 		        	CURIFSUB >
 		        	ACTIFSUB >
