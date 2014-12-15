@@ -27,7 +27,7 @@
 				background-color: $orange;
 			}
 			> ul.dropdown-menu {
-				> li.sub {
+				> li.sub, > li.sub > ul.sub-menu > li.sub-deep {
 					position: relative;
 					margin-right: 0;
 					> a {
@@ -48,6 +48,11 @@
 						@media #{$screen-lg} {
 					    	visibility: visible;
 					    }
+					    > li.sub-deep:hover > ul.sub-menu {
+					    	@media #{$screen-lg} {
+					    		visibility: visible;
+					    	}
+					    }
 					}
 				}
 				> li.sub.active {
@@ -60,11 +65,11 @@
 						color: $grayLight;
 					}
 					> ul.dropdown-menu.sub-menu {
-						> li.sub-third.active > a {
+						> li.sub-deep.active > a {
 							background-color: $red;
 							color: $grayLight;
 						}
-						> li.sub-third.active > a:hover {
+						> li.sub-deep.active > a:hover {
 							background-color: $orange;
 						}
 					}
