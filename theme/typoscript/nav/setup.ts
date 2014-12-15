@@ -7,67 +7,88 @@ lib.navbar {
         value = <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
         wrap = <div class="navbar-header"><button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#hkvw-navbar-main">|</button></div>
     }
-    20 = HMENU
-    20.wrap = <div class="collapse navbar-collapse" id="hkvw-navbar-main"><div class="navbar-right logo"><img class="img-responsive" src="{$plugin.tx_bootstrapcore.website.logoPath}"></div>|</div>
+    
+    20 = COA
+    20.wrap = <div class="collapse navbar-collapse" id="hkvw-navbar-main">|</div>|</div>
     20 {
-        entryLevel = 0
-        #excludeUidList = 11,12
-        1 = TMENU
-        1 {
-            wrap = <ul class="nav navbar-nav">|</ul>
-            expAll = 1
-
-            NO = 1
-            NO.allWrap >
-            NO.wrapItemAndSub = <li class="normal">|</li>
-            CUR = 1
-            CUR < .NO
-            CUR.wrapItemAndSub = <li class="active">|</li>
-            ACT = 1
-            ACT < .CUR
-						IFSUB = 1
-            IFSUB < .NO
-            IFSUB.wrapItemAndSub = <li class="dropdown">|</li>
-            IFSUB.ATagParams = class="dropdown-toggle" role="button" data-toggle="dropdown" data-target="#"
-            IFSUB.ATagBeforeWrap = 1
-            IFSUB.stdWrap.wrap = |<b class="caret"></b>
-            CURIFSUB = 1
-            CURIFSUB < .IFSUB
-            CURIFSUB.wrapItemAndSub = <li class="dropdown active">|</li>
-            ACTIFSUB = 1
-            ACTIFSUB < .CURIFSUB
-        }
-
-
-        2 = TMENU
-        2 {
-            wrap = <ul class="dropdown-menu" role="menu">|</ul>
-            expAll = 1
-
-            NO = 1
-            NO.allWrap >
-            NO.wrapItemAndSub = <li class="sub normal">|</li>
-            CUR = 1
-            CUR < .NO
-            CUR.wrapItemAndSub = <li class="sub active">|</li>
-            ACT = 1
-            ACT < .CUR
-
-            IFUSB < .1.IFSUB
-            CURIFSUB < .1.CURIFSUB
-            ACTIFSUB < .1.ACTIFSUB
-
-            SPC = 1
-            SPC.doNotLinkIt = 1
-            SPC.doNotShowLink = 1
-            SPC.allWrap = <li class="divider"></li>
-        }
-
-        3 < .2
-        3.IFSUB >
-        3.CURIFSUB >
-        3.ACTIFSUB >
+    			10 = HMENU
+    			10 {
+		        entryLevel = 0
+		        #excludeUidList = 11,12
+		        1 = TMENU
+		        1 {
+		            wrap = <ul class="nav navbar-nav">|</ul>
+		            expAll = 1
+		
+		            NO = 1
+		            NO.allWrap >
+		            NO.wrapItemAndSub = <li class="normal">|</li>
+		            CUR = 1
+		            CUR < .NO
+		            CUR.wrapItemAndSub = <li class="active">|</li>
+		            ACT = 1
+		            ACT < .CUR
+								IFSUB = 1
+		            IFSUB < .NO
+		            IFSUB.wrapItemAndSub = <li class="dropdown">|</li>
+		            IFSUB.ATagParams = class="dropdown-toggle" role="button" data-toggle="dropdown" data-target="#"
+		            IFSUB.ATagBeforeWrap = 1
+		            IFSUB.stdWrap.wrap = |<b class="caret"></b>
+		            CURIFSUB = 1
+		            CURIFSUB < .IFSUB
+		            CURIFSUB.wrapItemAndSub = <li class="dropdown active">|</li>
+		            ACTIFSUB = 1
+		            ACTIFSUB < .CURIFSUB
+		        }
+						2 = TMENU
+		        2 {
+		            wrap = <ul class="dropdown-menu" role="menu">|</ul>
+		            expAll = 1
+		
+		            NO = 1
+		            NO.allWrap >
+		            NO.wrapItemAndSub = <li class="sub normal">|</li>
+		            CUR = 1
+		            CUR < .NO
+		            CUR.wrapItemAndSub = <li class="sub active">|</li>
+		            ACT = 1
+		            ACT < .CUR
+		
+		            IFSUB < .1.IFSUB
+		            CURIFSUB < .1.CURIFSUB
+		            ACTIFSUB < .1.ACTIFSUB
+		
+		            SPC = 1
+		            SPC.doNotLinkIt = 1
+		            SPC.doNotShowLink = 1
+		            SPC.allWrap = <li class="divider"></li>
+		        }
+		        3 < .2
+		        3 {
+		        	wrap = <ul class="dropdown-menu sub-menu" role="menu">|</ul>
+		        	expAll = 1
+		        	NO = 1
+		          NO.allWrap >
+		          NO.wrapItemAndSub = <li class="sub-deep normal">|</li>
+		          CUR.wrapItemAndSub = <li class="sub-deep active">|</li>
+		        }
+		        4 < .3
+		        4 {
+		        	IFSUB >
+		        	CURIFSUB >
+		        	ACTIFSUB >
+		        }
+		      }
+		      
+    			30 = TEXT
+    			30.value = <div class="navbar-right logo"><img class="img-responsive" src="{$plugin.tx_bootstrapcore.website.logoPath}"></div>
+    			
+    			40 < lib.nav_searchbox
     }
+    
+    
+   
+    
 }
 
 lib.breadcrumb = COA

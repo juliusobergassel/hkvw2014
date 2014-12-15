@@ -48,3 +48,12 @@ img {
 	height: auto;
 }
 
+table.table-address {
+	width: auto;
+	border-style: none;
+	border-collapse: collapse;
+	cell-spacing: 0;
+	& tr { border-style: none; }
+	& tr > th { padding:0 !important; border-style: none;}	
+	& tr > td { padding:0 0 0 10px !important; border-style: none; }
+}
