@@ -7,7 +7,7 @@ config {
 plugin.tx_indexedsearch {
   templateFile = {$plugin.tx_bootstrapcore.theme.baseDir}/tmpl/indexed_search/indexed_search.html
   search {
-    rootPidList = {plugin.tx_bootstrapcore.indexed_search.rootPidList}
+    rootPidList = {$plugin.tx_bootstrapcore.indexed_search.rootPidList}
     page_links = 10
   }
   _DEFAULT_PI_VARS.type = 1

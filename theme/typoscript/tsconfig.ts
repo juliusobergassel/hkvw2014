@@ -90,7 +90,11 @@ RTE.default {
         blockstylelabel, blockstyle,
         linebreak,
         bold, italic, bar, orderedlist, unorderedlist, textstyle, link, insertcharacter, line, bar, subscript, superscript, bar, copy, cut, paste, pastetoggle, pastebehaviour, pasteastext, bar, textindicator
-        ,bar ,fonticon
+        ,bar ,fonticon , linebreak , 
+        table, toggleborders, bar, tableproperties, rowproperties, cellproperties, bar,
+				rowinsertabove,rowinsertunder,rowdelete,rowsplit,bar,
+				columninsertbefore,columninsertafter,columndelete,columnsplit,bar,
+				cellinsertbefore,cellinsertafter,celldelete,cellmerge,cellsplit, bar, about
     )
     RTEHeightOverride = 500
     RTEWidthOverride = 700
@@ -110,7 +114,7 @@ RTE.default {
 
         blockstyle.tags {
             #table.allowedClasses >
-            table.allowedClasses = table, table-striped, table-bordered, table-hover, table-condensed
+            table.allowedClasses = table, table-striped, table-bordered, table-hover, table-condensed, table-address
             div.allowedClasses = table-responsive
 
             blockquote.allowedClasses = pull-left, pull-right
@@ -125,7 +129,8 @@ RTE.default {
         }
         formatblock {
             removeItems = article,aside,footer,header,h6,nav,section
-            orderItems = h1, h2, h3, h4, h5, p, quotation, div
+            addItems = address
+            orderItems = h1, h2, h3, h4, h5, p, quotation, div, address
         }
         textstyle {
             tags.span.allowedClasses >
@@ -166,7 +171,7 @@ RTE.default {
             lead, badge,
             table, success, warning, danger, active,
             lightbox, indent,
-            btn, btn-default, btn-primary, btn-info, btn-success, btn-warning, btn-danger, btn-inverse, btn-link, btn-lg, btn-sm, btn-xs
+            btn, btn-default, btn-primary, btn-info, btn-success, btn-warning, btn-danger, btn-inverse, btn-link, btn-lg, btn-sm, btn-xs,
         )
 
         allowTagsOutside = img,hr,h1,h2,h3,h4,h5,h6,br,ul,ol,li,pre,address,span,blockquote

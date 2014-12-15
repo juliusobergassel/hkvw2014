@@ -660,6 +660,8 @@ pre code {
 table {
   max-width: 100%;
   background-color: transparent;
+  @include font;
+  font-size: 14px;
 }
 th {
   text-align: left;
@@ -1431,4 +1433,14 @@ a.btn-success {
 }
 a.btn-warning {
   box-sizing: inherit;
+}
+
+table.table-address {
+	width: auto;
+	border-style: none;
+	border-collapse: collapse;
+	cell-spacing: 0;
+	& tr { border-style: none; }
+	& tr > th { padding:0 !important; border-style: none;}	
+	& tr > td { padding:0 0 0 10px !important; border-style: none; }
 }
