@@ -69,12 +69,11 @@ lib.navbar {
 		        	expAll = 1
 		        	NO = 1
 		          NO.allWrap >
-		          NO.wrapItemAndSub = <li class="sub-third normal">|</li>
-		          CUR = 1
-		          CUR < .NO
-		          CUR.wrapItemAndSub = <li class="sub-third active">|</li>
-		          ACT = 1
-		          ACT < .CUR
+		          NO.wrapItemAndSub = <li class="sub-deep normal">|</li>
+		          CUR.wrapItemAndSub = <li class="sub-deep active">|</li>
+		        }
+		        4 < .3
+		        4 {
 		        	IFSUB >
 		        	CURIFSUB >
 		        	ACTIFSUB >
