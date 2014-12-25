@@ -48,11 +48,11 @@ footer .panel .panel-footer { padding-top: 30px; background-color: #eeeeee; }
 .hkvw-mainnav .navbar-nav > li { margin-right: 20px; }
 .hkvw-mainnav .navbar-nav > li > a { -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; padding-top: 30px; padding-bottom: 30px; }
 .hkvw-mainnav .navbar-nav > li a:hover { background-color: #F9B233; }
-.hkvw-mainnav .navbar-nav > li > ul.dropdown-menu > li.sub, .hkvw-mainnav .navbar-nav > li > ul.dropdown-menu > li.sub > ul.sub-menu > li.sub-deep { position: relative; margin-right: 0; }
-.hkvw-mainnav .navbar-nav > li > ul.dropdown-menu > li.sub > a┬á, .hkvw-mainnav .navbar-nav > li > ul.dropdown-menu > li.sub > ul.sub-menu > li.sub-deep > a┬á { -moz-border-radius: 0; -webkit-border-radius: 0; border-radius: 0; }
-@media only screen and (min-width: 768px) { .hkvw-mainnav .navbar-nav > li > ul.dropdown-menu > li.sub > ul.sub-menu, .hkvw-mainnav .navbar-nav > li > ul.dropdown-menu > li.sub > ul.sub-menu > li.sub-deep > ul.sub-menu { visibility: hidden; left: 100%; position: absolute; top: -7px; margin-left: -2px; } }
-@media only screen and (min-width: 768px) { .hkvw-mainnav .navbar-nav > li > ul.dropdown-menu > li.sub:hover > ul.sub-menu { visibility: visible; } }
-@media only screen and (min-width: 768px) { .hkvw-mainnav .navbar-nav > li > ul.dropdown-menu > li.sub:hover > ul.sub-menu > li.sub-deep:hover > ul.sub-menu { visibility: visible; } }
+.hkvw-mainnav .navbar-nav > li > ul.dropdown-menu > li.sub, .hkvw-mainnav .navbar-nav > li > ul.dropdown-menu > li.sub > ul > li.sub-deep, .hkvw-mainnav .navbar-nav > li > ul.dropdown-menu > li.sub > ul > li.sub-deep > ul > li.sub-deep { position: relative; margin-right: 0; }
+.hkvw-mainnav .navbar-nav > li > ul.dropdown-menu > li.sub > a┬á, .hkvw-mainnav .navbar-nav > li > ul.dropdown-menu > li.sub > ul > li.sub-deep > a┬á, .hkvw-mainnav .navbar-nav > li > ul.dropdown-menu > li.sub > ul > li.sub-deep > ul > li.sub-deep > a┬á { -moz-border-radius: 0; -webkit-border-radius: 0; border-radius: 0; }
+.hkvw-mainnav .navbar-nav > li > ul.dropdown-menu > li.sub > ul.sub-menu, .hkvw-mainnav .navbar-nav > li > ul.dropdown-menu > li.sub > ul > li.sub-deep > ul.sub-menu, .hkvw-mainnav .navbar-nav > li > ul.dropdown-menu > li.sub > ul > li.sub-deep > ul > li.sub-deep > ul.sub-menu { visibility: hidden; left: 100%; position: absolute; top: -7px; margin-left: -2px; }
+.hkvw-mainnav .navbar-nav > li > ul.dropdown-menu > li.sub:hover > ul.sub-menu { visibility: visible; }
+.hkvw-mainnav .navbar-nav > li > ul.dropdown-menu > li.sub:hover > ul.sub-menu li.sub-deep:hover > ul.sub-menu { visibility: visible; }
 .hkvw-mainnav .navbar-nav > li > ul.dropdown-menu > li.sub.active > a { background-color: #E30513; color: #eeeeee; }
 .hkvw-mainnav .navbar-nav > li > ul.dropdown-menu > li.sub.active > a:hover { background-color: #E30513; color: #eeeeee; }
 .hkvw-mainnav .navbar-nav > li > ul.dropdown-menu > li.sub.active > ul.dropdown-menu.sub-menu > li.sub-deep.active > a { background-color: #E30513; color: #eeeeee; }

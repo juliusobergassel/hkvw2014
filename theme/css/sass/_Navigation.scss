@@ -27,31 +27,31 @@
 				background-color: $orange;
 			}
 			> ul.dropdown-menu {
-				> li.sub, > li.sub > ul.sub-menu > li.sub-deep {
+				> li.sub, > li.sub > ul > li.sub-deep, > li.sub > ul > li.sub-deep > ul > li.sub-deep {
 					position: relative;
 					margin-right: 0;
 					> a {
 						@include border-radius(0);
 					}
 					> ul.sub-menu {
-						@media #{$screen-lg} {
+						
 							visibility: hidden;
 					    	left: 100%;
 							position: absolute;
 							top: -7px;
 							margin-left:-2px;
-						}
+						
 					}			    
 				}
 				> li.sub:hover {
 					> ul.sub-menu {
-						@media #{$screen-lg} {
+						
 					    	visibility: visible;
-					    }
-					    > li.sub-deep:hover > ul.sub-menu {
-					    	@media #{$screen-lg} {
+					    
+					    & li.sub-deep:hover > ul.sub-menu {
+					    	
 					    		visibility: visible;
-					    	}
+					    	
 					    }
 					}
 				}
