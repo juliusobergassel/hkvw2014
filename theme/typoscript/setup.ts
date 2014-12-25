@@ -91,11 +91,15 @@ page {
         10 {
             10 = TEXT
             10.value (
-                <link rel="shortcut icon" href="fileadmin/favicons/favicon.ico" />
-                <link rel="apple-touch-icon-precomposed" sizes="144x144" href="fileadmin/favicons/apple-touch-icon-144x144-precomposed.png">
-                <link rel="apple-touch-icon-precomposed" sizes="114x114" href="fileadmin/favicons/apple-touch-icon-114x114-precomposed.png">
-                <link rel="apple-touch-icon-precomposed" sizes="72x72" href="fileadmin/favicons/apple-touch-icon-72x72-precomposed.png">
-                <link rel="apple-touch-icon-precomposed" href="fileadmin/favicons/apple-touch-icon-precomposed.png">
+            		<link rel="shortcut icon" href="{$plugin.tx_bootstrapcore.theme.baseDir}/img/favicon.ico" type="image/x-icon" />
+								<link rel="apple-touch-icon" href="{$plugin.tx_bootstrapcore.theme.baseDir}/img/apple-touch-icon.png" />
+								<link rel="apple-touch-icon" sizes="57x57" href="{$plugin.tx_bootstrapcore.theme.baseDir}/img/apple-touch-icon-57x57.png" />
+								<link rel="apple-touch-icon" sizes="72x72" href="{$plugin.tx_bootstrapcore.theme.baseDir}/img/apple-touch-icon-72x72.png" />
+								<link rel="apple-touch-icon" sizes="76x76" href="{$plugin.tx_bootstrapcore.theme.baseDir}/img/apple-touch-icon-76x76.png" />
+								<link rel="apple-touch-icon" sizes="114x114" href="{$plugin.tx_bootstrapcore.theme.baseDir}/img/apple-touch-icon-114x114.png" />
+								<link rel="apple-touch-icon" sizes="120x120" href="{$plugin.tx_bootstrapcore.theme.baseDir}/img/apple-touch-icon-120x120.png" />
+								<link rel="apple-touch-icon" sizes="144x144" href="{$plugin.tx_bootstrapcore.theme.baseDir}/img/apple-touch-icon-144x144.png" />
+								<link rel="apple-touch-icon" sizes="152x152" href="{$plugin.tx_bootstrapcore.theme.baseDir}/img/apple-touch-icon-152x152.png" />
             )
         }
     		20 = TEXT
