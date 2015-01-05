@@ -42,7 +42,7 @@ plugin.tx_bootstrapcore {
 		}
     website {
         domain = www.heimatverein-werther.de
-        logoPath = fileadmin/hkvw2014/theme/img/HKVW_Logo.png
+        logoPath = fileadmin/hkvw2014/theme/img/HKVW_Logo_web.png
         lang {
             locale = de_DE.UTF-8
             localeShort = de
