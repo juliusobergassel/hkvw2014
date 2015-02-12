@@ -303,7 +303,7 @@ lib {
 		}
 	}
 	footerContent = COA
-	footerContent.wrap = <div class="panel"><div class="panel-footer"><div class="container"><div class="row">|</div></div></div></div>
+	footerContent.wrap = <div class="panel"><div class="panel-footer"><noscript><p><img src="//piwik.huk-werther.de/piwik.php?idsite=2" style="border:0;" alt="" /></p></noscript><div class="container"><div class="row">|</div></div></div></div>
 	footerContent {
         10 < styles.content.get
         10 {

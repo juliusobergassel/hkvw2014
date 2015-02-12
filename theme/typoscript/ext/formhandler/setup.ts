@@ -71,28 +71,11 @@ plugin.Tx_Formhandler.settings.predef.hkvwcontact {
             admin {
             		templateFile = TEXT
 								templateFile.value = {$plugin.tx_bootstrapcore.theme.baseDir}/tmpl/formhandler/email-admin.html
-                to_email = julius.obergassel@oglm.de
-                to_name = Julius Obergassel
-                subject.data = LLL:{$plugin.tx_bootstrapcore.theme.baseDir}/tmpl/formhandler/locallang.xml:email_admin_subject
-                return_path =
-                sender_email = webforms@heimatverein-werther.de
-                sender_name.data = HKVWContact
-                replyto_email.data = GPvar:formhandler|email
-                replyto_name.data = GPvar:formhandler|name
                 htmlEmailAsAttachment = 1
             }
             user {
 								templateFile = TEXT
-								templateFile.value = {$plugin.tx_bootstrapcore.theme.baseDir}/tmpl/formhandler/email-admin.html
-                to_email = GPvar:formhandler|email
-                to_name = GPvar:formhandler|name
-                subject = Formular
-                sender_email = no-reply@heimatverein-werther.de
-                sender_name = Heimat- und Kulturverein Werther e.V.
-                replyto_email = no-reply@heimatverein-werther.de
-                replyto_name = Heimat- und Kulturverein Werther e.V.
-                return_path =
-                htmlEmailAsAttachment = 1
+								templateFile.value = {$plugin.tx_bootstrapcore.theme.baseDir}/tmpl/formhandler/email-user.html
             }
         }
         2.class = Tx_Formhandler_Finisher_Redirect

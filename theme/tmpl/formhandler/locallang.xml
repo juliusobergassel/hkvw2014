@@ -11,13 +11,10 @@
 			<label index="message">Ihre Nachricht:</label>
 			<label index="captcha">Sicherheitsfrage:</label>
 			<label index="submit">Absenden</label>
-			<label index="greetings">Sehr geehrte/r </label>
-			<label index="email_user_subject">Ihre Anfrage an uns</label>
-			<label index="email_user_text">Wir haben Ihre Nachricht von heimatverein-werther.de erhalten und werden diese schnellstmöglich bearbeiten. Vielen Dank für Ihre Geduld.ir haben Ihre Nachricht von heimatverein-werther.de erhalten und werden diese schnellstmöglich bearbeiten. Vielen Dank für Ihre Geduld.</label>
+			<label index="greetings">Sehr geehrte/r Herr/Frau</label>
+			<label index="email_user_text">Wir haben Ihre Nachricht erhalten und werden diese schnellstmöglich bearbeiten. In der Zwischenzeit bitten wir Sie um Geduld. Anbei erhalten Sie eine Kopie der übermittelten Nachricht.</label>
 			<label index="email_user_footer">---------------------------------- Die Nachricht wurde maschinell erstellt. --------------------------------</label>
-
-			<label index="email_admin_subject">Kontaktformular</label>
-			<label index="email_admin_text">Das Kontaktformular HKVWContact wurde ausgefüllt.</label>
+			<label index="email_admin_text">Das Kontaktformular HKVWContact wurde ausgefüllt:</label>
 			<label index="email_admin_footer">---------------------------------- Die Nachricht wurde maschinell erstellt. --------------------------------</label>
 
 			<label index="error_name_required">Bitte geben Sie Ihren Namen ein.</label>
